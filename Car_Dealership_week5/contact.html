@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Mihaela McReynolds">
+    <meta name="description" content="Contact form for Awesome Car Dealership Co">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<title>Contact</title>
+	
+	<style>
+	/* Navigation */
+			* {
+		  box-sizing: border-box;
+		}
+
+		.navbar .navbar-collapse {
+			color: #FFFFFF;
+			font-family: Open Sans, "Arial", sanserif; 
+			font-size: 115%;
+		}
+		.navbar .navbar-collapse .navbar-nav > li > a {
+			width: 100%;
+			display: inline-block;
+			color: #BFB1B1;
+			font-family: Helvetica, sanserif;
+			font-size: 1em;
+			letter-spacing: 3px;
+			font-variant: small-caps;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			background-color: black;
+		}
+		.navbar .navbar-collapse .navbar-nav > li > a:hover,
+		.navbar .navbar-collapse .navbar-nav > li > a:focus {
+			color: #FF5900;
+		}
+		.navbar .navbar-collapse .navbar-nav > li > a:active  {
+			color: #FF5900;
+		}
+		
+		body {
+			background-color: #2e2b2b;
+			font-family: Open Sans, "Arial", sanserif; 
+			letter-spacing: 2px;
+			word-spacing: 4px;
+			color: white; 
+		}
+		
+		.card {
+			background-color: black;
+		}
+		
+		li a {
+			width: 100%;
+			display: inline-block;
+			color: #BFB1B1;
+			font-family: Helvetica, sanserif;
+			font-size: 2em;
+			letter-spacing: 3px;
+			font-variant: small-caps;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			background-color: black;
+		}
+
+		/* visited link */
+		li a:visited {
+			color: #FF5900;
+		}
+
+		/*when you hover over link */
+		li a:hover, li a:active {
+			color: #FF5900;
+		}
+		
+		/* Contact form */
+		input[type=text], select, textarea {
+		  width: 100%;
+		  padding: 20px;
+		  color: white;
+		  background-color: #2e2b2b;
+		  border: 1px solid #FF5900;
+		  margin-bottom: 25px;
+		  resize: vertical;
+		}
+
+		input[type=submit] {
+		  background-color: black;
+		  color: white;
+		  padding: 12px 20px;
+		  border: none;
+		  cursor: pointer;
+		}
+
+		input[type=submit]:hover {
+		  background-color: #2e2b2b;
+		}
+
+		/* Style the container/contact section */
+		.container {
+		  background-color: black;
+		  padding: 20px;
+		  margin: 20px;
+		}
+
+		/* Create two columns that float next to eachother */
+		.column {
+		  float: left;
+		  width: 50%;
+		  margin-top: 6px;
+		  padding: 20px;
+		}
+
+		/* Clear floats after the columns */
+		.row:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+
+		/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+		@media screen and (max-width: 600px) {
+		  .column, input[type=submit] {
+			width: 100%;
+			margin-top: 0;
+		  }
+		}
+	    
+		h2 {
+		  color: #FF5900;
+		}
+		
+		p {
+		  color: #BFB1B1;
+		}
+		
+		h6 {
+		  color: #FF5900;
+		  text-align: center;
+		}
+		
+		
+	</style>
+  </head>
+  <body>
+	<!--Navigation bar -->
+	  <nav class="navbar navbar-expand-xl navbar-dark" style="background: black;">
+	    <a class="navbar-brand" href="/" style="vertical-align: top; padding:0;">
+		<img src="acdc_banner.png" alt="Logo" style="vertical-align: top; padding-right:40px; height: 100px; width:100%;">
+	  </a>
+		<div class="nav navbar-nav">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+	    </button>		
+	      <div class="collapse navbar-collapse navbar-right" id="navbarSupportedContent">
+		   <ul class="navbar-nav mr-auto mt-lg-0" style="padding:30px;">
+		    <li class="nav-item active">
+			  <a class="nav-link" href="lab4b.html">Home <span class="sr-only">(current)</span></a>
+		    </li>
+		    <li class="nav-item">
+			  <a class="nav-link" href="#News">News</a>
+		    </li>
+		    <li class="nav-item">
+			  <a class="nav-link" href="contact.html">Contact</a>
+		    </li>
+		    <li class="nav-item">
+			  <a class="nav-link" href="#About">About</a>
+		    </li>
+		  </ul>
+		  </div>
+	    </div>
+	  </nav>
+	  <!-- Container for the contact form -->
+	  <div class="d-flex justify-content-center">
+	    <div class="container align-center">
+			<div style="text-align:center">
+				<h2>Contact Us</h2><p>Please leave us a message:</p>
+			</div>
+			<div class="row">
+				<div class="column">
+					<img src="map.jpg" style="width:100%">
+					<h6><br> 4352345 Washington Ave <br> Louisville, CA 47851 <hr> 845-785-4512<br>
+				</div>
+			<div class="column">
+				<form action="/action_page.php">
+					<label for="fname">First Name</label>
+					<input type="text" id="fname" name="firstname" placeholder="Your name..">
+					<label for="lname">Last Name</label>
+					<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+					<label for="subject">Subject</label>
+					<textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+					<input type="submit" value="Submit" style="color:#FF5900; border: 1px solid #FF5900; ">
+				</form>
+			</div>
+		</div>
+	  </div>
+	</div>
+  </body>
+</html>

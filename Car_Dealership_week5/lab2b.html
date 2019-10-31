@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Mihaela McReynolds">
+    <meta name="description" content="Week 2 Lab B: The goal now will be to make your survey look professional 
+	by adding CSS style elements to give it an appropriate look. You have two options, depending on the type 
+	of hypothetical dealership you'd prefer to work with. Either:
+Choose an automobile manufacturer and customize your survey to reflect that brand. Use appropriate colors, 
+add a logo, align all elements on the page in a way that looks good (for example, so that there are no mis-aligned elements).
+Or: Create your own brand -- you may customize the color schemes/logos any way you like. Everything from the point 
+above regarding alignment, good style, etc. still applies though.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/64d06c75d0.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <style type="text/css"> @import url(index.css)</style>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Week 1 Lab Assignment</title>
+  </head>
+    <body>
+	<ul>
+		<li><a href="lab4b.html" class="active">Home</a></li>
+		<li><a href="#news">News</a></li>
+		<li><a href="contact.html">Contact</a></li>
+		<li><a href="#about">About</a></li>
+	</ul>
+	<div class="banner">
+	<img src="acdc_banner.png" alt="Awesome Car Dealership Co text" style="width:100%;"><br/>
+    </div>
+	<!-- <h1>Awesome  Car  Dealership Co</h1> -->
+    <!-- 1. A checkbox question with 7 values -->
+    <h2>Customer Satisfaction Survey</h2>
+	<div class="logo">
+	<img src="acdc_logo1.png" alt="image of a car with the text awesome car dealership co"></br>
+    </div>
+	<form action="/action_page.html"> <!-- no functionality yet; when the user clicks Submit, it should go to this other page -->
+    <div class ="q"> 
+      <p>
+	    <h3>1. What kind of vehicle were you looking for?</h3><br/>
+			<label class="container"> 4-Door Sedan
+			  <input type="checkbox">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container"> Coupe
+			  <input type="checkbox">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container"> Sports Car
+			  <input type="checkbox">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container"> Crossover
+			  <input type="checkbox">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container"> Van
+			  <input type="checkbox">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container"> Truck
+			  <input type="checkbox">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container"> Hybrid
+			  <input type="checkbox">
+			  <span class="checkmark"></span>
+			</label>
+	  </p>
+    <!-- 2. A drop-down choice of location out of 4 values -->
+      <p><h3>2. Which of our locations did you visit?</h3><br/>
+        <select>
+          <option value="West">West Awesome Car Dealership</option>
+          <option value="East">East Awesome Car Dealership</option>
+          <option value="North">North Awesome Car Dealership</option>
+          <option value="South">South Awesome Car Dealership</option>
+        </select><br/>
+      </p>
+	<!-- 3. A text box with 30 columns to get name or description of employee -->
+      <p><h3>3. Which of our team members assisted you?</h3><br/>
+        <textarea name="dealer_name" class="a">
+        </textarea><br/>
+      </p>
+	  <!-- 6 radio style questions with 4 choices each. Question names are Q1-6. Assign value 3 for most positive result, 2 for second most positive, 1 for neutral, and 0 for negative. -->
+      <p><h3>4. What did you think of our car lot and facilities?</h3><br/>
+	    <label class="radioContainer"> Very clean and well-maintained
+		  <input type="radio" name="Q4" value="3"> 
+			<span class="checkRadio"></span>
+		</label>
+			    <label class="radioContainer"> Nice and inviting
+		  <input type="radio" name="Q4" value="2"> 
+			<span class="checkRadio"></span>
+		</label>
+			    <label class="radioContainer"> Nothing spectacular, but not bad
+		  <input type="radio" name="Q4" value="1"> 
+			<span class="checkRadio"></span>
+		</label>
+			    <label class="radioContainer"> Needs improvement
+		  <input type="radio" name="Q4" value="0"> 
+			<span class="checkRadio"></span>
+		</label>
+      </p>
+      <p><h3>5. How well were you received into our building?</h3><br/>
+	    <label class="radioContainer"> Fast, efficient and friendly reception
+		  <input type="radio" name="Q5" value="3"> 
+			<span class="checkRadio"></span>
+		</label>
+	    <label class="radioContainer"> Good service
+		  <input type="radio" name="Q5" value="2"> 
+			<span class="checkRadio"></span>
+		</label>
+			    <label class="radioContainer"> Average service
+		  <input type="radio" name="Q5" value="1"> 
+			<span class="checkRadio"></span>
+		</label>
+			    <label class="radioContainer"> Needs improvement
+		  <input type="radio" name="Q5" value="0"> 
+			<span class="checkRadio"></span>
+		</label>
+      </p>
+      <p><h3>6. Was a dealer able to assist you in a timely manner?</h3><br/>
+	    <label class="radioContainer"> Within 5 minutes
+		  <input type="radio" name="Q6" value="3"> 
+			<span class="checkRadio"></span>
+		</label>
+	    <label class="radioContainer"> Within 5-10 minutes
+		  <input type="radio" name="Q6" value="2"> 
+			<span class="checkRadio"></span>
+		</label>
+			    <label class="radioContainer"> Within 10-20 minutes
+		  <input type="radio" name="Q6" value="1"> 
+			<span class="checkRadio"></span>
+		</label>
+			    <label class="radioContainer"> I waited more than 20 minutes
+		  <input type="radio" name="Q6" value="0"> 
+			<span class="checkRadio"></span>
+		</label>	
+      </p>
+      <p><h3>7. Did the dealer understand your budget and needs?</h3></br>
+	    <label class="radioContainer"> Perfectly
+		  <input type="radio" name="Q7" value="3"> 
+			<span class="checkRadio"></span>
+		</label>
+	    <label class="radioContainer"> Mostly
+		  <input type="radio" name="Q7" value="2"> 
+			<span class="checkRadio"></span>
+		</label>
+		<label class="radioContainer"> Only some aspects
+		  <input type="radio" name="Q7" value="1"> 
+			<span class="checkRadio"></span>
+		</label>
+	    <label class="radioContainer"> Not at all
+		  <input type="radio" name="Q7" value="0"> 
+			<span class="checkRadio"></span>
+		</label>
+      </p>
+      <p><h3>8. Were you able to test drive the cars you wanted to?</h3></br>
+	    <label class="radioContainer"> Yes, all of them
+		  <input type="radio" name="Q8" value="3"> 
+			<span class="checkRadio"></span>
+		</label>
+	    <label class="radioContainer"> Yes, but not all
+		  <input type="radio" name="Q8" value="2"> 
+			<span class="checkRadio"></span>
+		</label>
+		<label class="radioContainer"> I tested one of the cars I was interested in
+		  <input type="radio" name="Q8" value="1"> 
+			<span class="checkRadio"></span>
+		</label>
+		<label class="radioContainer"> I did not test any of the cars I was looking at
+		  <input type="radio" name="Q8" value="0"> 
+			<span class="checkRadio"></span>
+		</label>
+      </p>
+      <p><h3>9. Did you find the perfect car for you?</h3></br>
+	    <label class="radioContainer"> Yes
+		  <input type="radio" name="Q9" value="3"> 
+			<span class="checkRadio"></span>
+		</label>
+	    <label class="radioContainer"> I have a few to think about
+		  <input type="radio" name="Q9" value="2"> 
+			<span class="checkRadio"></span>
+		</label>
+		<label class="radioContainer"> No, but I will return
+		  <input type="radio" name="Q9" value="1"> 
+			<span class="checkRadio"></span>
+		</label>
+		<label class="radioContainer"> No, and I will not return
+		  <input type="radio" name="Q9" value="0"> 
+			<span class="checkRadio"></span>
+		</label>
+      </p>
+      <!-- Use a range from 0 to 10 to assess satisfaction -->
+      <p><h3>10. How satisfied are you with our dealership?</h3></br>
+      	<span id="bad">Not at all satisfied</span>
+		<span class="slidecontainer">
+		  <input type="range" name="satisfaction" min="0" max="10" class="slider">
+		</span>
+		<span id="good">Very satisfied</span>
+      </p>
+      <!-- Additional feedback to be collected via textarea. Could include phone number, email address, or mailing address. -->
+      <p><h3>11. Do you have any additional feedback for us?</br>
+	  Please leave your preferred contact information if you would like our team to get back to you.</h3></br>
+        <textarea name="feedback" class="b">
+		</textarea>
+	  </p>
+      </br>
+      <input type="submit" value="Submit" style="color:white; background-color: #2e2b2b; border-color: #FF5900;">
+      </br>
+	  </div>
+    </form>
+  </body>
+</html>

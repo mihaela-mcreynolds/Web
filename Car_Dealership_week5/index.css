@@ -1,0 +1,336 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+	background-color: #2e2b2b;
+}
+
+body, label.container, .radioContainer {
+    font-family: Open Sans, "Arial", sanserif;
+	letter-spacing: 2px;
+	word-spacing: 4px;
+	font-size: 110%;
+	color: white;
+}
+
+/* List to contain the navigation buttons */
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	<!--background-color: #564D66;-->
+}
+
+/* Each navigation button */
+li {
+	float: left;
+	width: 25%;
+}
+
+li a{
+	width: 100%;
+	display: inline-block;
+	color: #BFB1B1;
+	font-family: Helvetica, sanserif;
+	font-size: 2em;
+	letter-spacing: 3px;
+	font-variant: small-caps;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	background-color: black;
+	text-decoration: none;
+}
+
+/* visited link */
+li a:visited {
+	color: #FF5900;
+	text-decoration: none;
+}
+
+/* when you hover over link and for active link*/
+li a:hover, li a:active {
+	color: #FF5900;
+	text-decoration: none;
+}
+
+/* Title: Customer Satisfaction Survey */
+h2 {
+    font-family: Helvetica, serif;
+	font-variant: small-caps;
+	font-size: 2.60em;
+    text-align: center;
+	color: #BFB1B1;
+	letter-spacing: 2px;
+	word-spacing: 3px;
+	padding: 10px;
+}
+
+/* Each of the questions on form */
+h3 {
+	font-size: 1.30em;
+	color: #FF5900;
+}
+
+p {
+	padding-bottom: 10px;
+}
+select, text, #userName, #dealerName {
+	font-family: Helvetica, serif;
+	color: #a8a3a3;
+	font-size: 100%;
+	text-align: left;
+	background-color: #3d3b3b;
+	padding: 5px;
+  margin-left: 20px;
+}
+
+select {
+	border: 1px solid #3d3a3b;
+}
+
+div.q {
+    font-size: 1.60em;
+    width: 85%;
+    margin: auto;
+	border: 2px dashed #3d3a3a;
+	line-height: 1.8;
+	padding-left: 10px;
+	margin-bottom: 20px;
+}
+
+/* CHECKBOXES */
+/* The container for checkboxes*/
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #3d3a3a;
+}
+
+/* On mouse-over, make it orange */
+.container:hover input ~ .checkmark {
+  background-color: #FF5900;
+}
+
+/* When the checkbox is checked, add an orange background */
+.container input:checked ~ .checkmark {
+  background-color: #FF5900;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 3px;
+  width: 7px;
+  height: 14px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* RADIO BUTTONS */
+/* The radio container */
+.radioContainer {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radioContainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkRadio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #3d3a3a;
+  border-radius: 50%;
+  margin-top: 9px;
+}
+
+/* On mouse-over, add orange as background color */
+.radioContainer:hover input ~ .checkRadio {
+  background-color: #FF5900;
+}
+
+/* When the radio button is checked, add orange background */
+.radioContainer input:checked ~ .checkRadio {
+  background-color: #FF5900;
+}
+
+/* Create the indicator (the circle - hidden when not checked) */
+.checkRadio:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (circle) when checked */
+.radioContainer input:checked ~ .checkRadio:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radioContainer .checkRadio:after {
+ 	top: 4px;
+	left: 4px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #2e2b2b;
+}
+
+/* ACDC car logo is positioned for optimal view at loading time, then it stays in position */
+div.logo {
+	margin: 0;
+	position: fixed;
+	top: 88%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+}
+
+/* Q3. Which of our team members assisted you? */
+textarea.a {
+	overflow: auto;
+	width: 265px;
+	height: 60px;
+	border: 1px solid #3d3a3a;
+	background-color: #3d3a3a;
+}
+
+/* Q11. Additional feedback */
+textarea.b {
+	overflow: auto;
+	width: 80%;
+	height: 35%;
+	border: 1px solid #3d3a3a;
+	background-color: #3d3a3a;
+}
+
+/* Custom slider: gradient from red to green to assess satisfaction */
+/* Q10. How satisfied are you */
+.slidecontainer {
+	width: 45%;
+	position: relative;
+	display: inline-block;
+	left: 50;
+	margin: auto;
+}
+
+/* colors are at .5 opacity, so they don't disrupt color scheme */
+.slider {
+  -webkit-appearance: none;
+  width: 120px;
+  height: 15px;
+  background-image: linear-gradient(to right,  tomato, limegreen);
+  outline: none;
+  opacity: 0.5;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+/* Make the colors brighter when you hover */
+.slider:hover {
+  opacity: 1;
+}
+
+/* Show pointer when you touch the slider-thumb */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: pointer;
+  width: 16px;
+  height: 16px;
+  background: darkkhaki;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background: darkkhaki;
+  cursor: pointer;
+}
+
+.centerimg {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px 0;
+	width: 20%;
+	position: fixed;
+	right: 0;
+	top: 0;
+}
+
+/* #gradient {
+	background-color: #cccccc;
+	background-image: linear-gradient(#564D66, #DBD5D2);
+} */
+
+/* id for text "Not at all satisfied" */
+#bad {
+    color: tomato;
+	display: inline-block;
+}
+
+/* id for text "Very satisfied" */
+#good {
+    color: limegreen;
+	display: inline-block;
+}

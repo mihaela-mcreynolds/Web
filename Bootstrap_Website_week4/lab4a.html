@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Mihaela McReynolds">
+    <meta name="description" content="Lab 4 Part A: Select one of the Bootstrap templates 
+		from the Getting Started with Bootstrap tutorial examples and create an opening 
+		page for a traveling symphony orchestra. This exercise is to familiarize you with 
+		Bootstrap and let you practice a little bit with your design skills on a random 
+		project. You only have to create one page and should use any relevant photos you 
+		would like (cite sources/give credit), but you must create the text and the layout.
+		For full credit, this part of the lab must:
+		Use Bootstrap extensively. Using CSS/Less/HTML is allowed, but the main focus of 
+		this lab is Bootstrap and any lab that does not use it will not receive credit 
+		(even if the page has all the necessary content and style).
+		Include several images. Please be sure to cite sources.
+		Include a tour schedule. This should be a neatly organized table. The table should 
+		be responsive (grading will include window resizing, and credit for this part of 
+		the lab will depend partly on how your table responds).">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<title>Lab4A</title>
+  </head>
+  <body>
+	<div class="container-fluid">
+	<!--Navigation bar -->
+	  <!-- Logo -->
+	  <nav class="navbar navbar-expand-md fixed-top navbar-light" style="background-color: white;">
+	  <a class="navbar-brand" href="/" style="vertical-align: top; padding:0;">
+		<img src="logo1.png" alt="Logo" style="vertical-align: top; padding:0;">
+	  </a>
+	  
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <!-- Collapsible navbar -->
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+		  <li class="nav-item active">
+			<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#">About</a>
+		  </li>
+		  <li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			  Upcoming
+			</a>
+			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			  <a class="dropdown-item" href="#">Tour</a>
+			  <div class="dropdown-divider"></div>
+			  <a class="dropdown-item" href="#">Concerts</a>
+			  <div class="dropdown-divider"></div>
+			  <a class="dropdown-item" href="#">Events</a>
+			</div>
+		</ul>
+		<!-- Search bar and button -->
+		<form class="form-inline my-2 my-lg-0">
+		  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+		  <button class="btn btn-outline-warning btn-sm btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+		</form>
+	  </div>
+	  </nav>
+	  
+	  <!-- Carousel -->
+	  <div class="img-photos" style="color:#fad25a;">
+		<div id="FotCcarousel" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#FotCcarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#FotCcarousel" data-slide-to="1"></li>
+				<li data-target="#FotCcarousel" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active" style="max-height: 700px;">
+					<img class="img-responsive" src="img1.jpg" alt="orchestra image by Pexels from Pixabay" style="max-width: 100%;">
+					<div class="carousel-caption d-none d-sm-block">
+						<h5 style="color: goldenrod;">Flight of the Cymbals</h5>
+						<p style="color: goldenrod;">Now available for birthday parties!</p>
+						<small class="text-muted">Image by <a href="https://pixabay.com/users/Pexels-2286921/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1838390">Pexels</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1838390">Pixabay</a> </small>
+					</div>
+				</div>
+				<div class="carousel-item" style="max-height: 700px;">
+					<img class="img-responsive" src="img2.jpg" alt="orchestra image" style="max-width: 100%;">
+					<div class="carousel-caption d-none d-sm-block">
+						<h5 style="color:lightgray;">Tennessee Theater</h5>
+						<p style="color:lightgray;">December 2nd</p>
+						<small class="text-muted">Image by <a href="https://pixabay.com/users/TravelCoffeeBook-692530/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=594592">TravelCoffeeBook</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=594592">Pixabay</a></small>
+					</div>
+				</div>
+				<div class="carousel-item" style="max-height: 700px;">
+					<img class="img-responsive" src="img3.jpg" alt="orchestra image" style="max-width: 100%;">
+					<div class="carousel-caption d-none d-sm-block">
+						<h5 style="color:pink;">Attend for free</h5>
+						<p style="color:pink;">Join our C Org today!</p>
+						<small class="text-muted">Image by <a href="https://pixabay.com/users/YannaZazu-4665957/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2098877">Ioana Sasu</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2098877">Pixabay</a></small>
+					</div>
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#FotCcarousel" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#FotCcarousel" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	  </div>
+	<!-- Jumbotron --> 
+	<div class="jumbotron jumbotron-fluid" style="background-color:white; margin:0;">
+		<div class="container" style="background-color:white;">
+			<h1 class="display-4">Flight of the Cymbals</h1>
+			<p class="lead">New Zealand's <strong>fourth</strong> most popular travelling symphony orchestra is coming to your town! </p>
+		</div>
+	</div>	
+	<!-- Table -->
+	<div class="table-responsive-lg">
+	<table class="table table-bordered table-hover table-light">
+	  <thead>
+		<tr>
+		  <th scope="col" style="text-align:right;">Date</th>		  
+		  <th scope="col">Location</th>
+		  <th scope="col">City</th>
+		  <th scope="col">Country</th>
+		</tr>
+	  </thead>
+	  <tbody>
+		<tr>
+		  <td style="text-align:right;">10/2/2019</td>
+		  <td>Le Connaisseur</td>
+		  <td>Paris</td>
+		  <td>France</td>
+		</tr>
+		<tr>
+		  <td style="text-align:right;">10/10/2019</td>
+		  <td>Ye Old Timey</td>
+		  <td>Stonehenge</td>
+		  <td>UK</td>
+		</tr>
+		<tr>
+		  <td style="text-align:right;">10/20/2019</td>
+		  <td>The Coliseum</td>
+		  <td>Rome</td>
+		  <td>Italy</td>
+		</tr>
+		<tr>
+		  <td style="text-align:right;">10/25/2019</td>
+		  <td>K.B Hallen</td>
+		  <td>Copenhagen</td>
+		  <td>Denmark</td>
+		</tr>
+		<tr>
+		  <td style="text-align:right;">11/02/2019</td>
+		  <td>Tennessee Theater</td>
+		  <td>Knoxville</td>
+		  <td>USA</td>
+		</tr>
+		<tr>
+		  <td style="text-align:right;">11/10/2019</td>
+		  <td>Roundtrip through the canals</td>
+		  <td>Amsterdam</td>
+		  <td>Netherlands</td>
+		</tr>
+		<tr>
+		  <td style="text-align:right;">11/20/2019</td>
+		  <td>Festival Hall</td>
+		  <td>Melbourne</td>
+		  <td>Australia</td>
+		</tr>
+		<tr>
+		  <td style="text-align:right;">11/26/2019</td>
+		  <td>Dunedin Town Hall</td>
+		  <td>Dunedin</td>
+		  <td>New Zealand</td>
+		</tr>
+		<tr>
+		  <td style="text-align:right;">12/1/2019</td>
+		  <td>Gaumont</td>
+		  <td>Bournemouth</td>
+		  <td>UK</td>
+		</tr>
+	  </tbody>
+	</table>	  
+	</div>
+	  <!-- Card -->
+	<div class="card mx-auto" style="width: 18rem; text-align:center; margin: 100px 0 100px 0;">
+	  <img src="img4.jpg" class="card-img-top" alt="themed party">
+	  <div class="card-body">
+		<p class="card-text">Also available for themed office parties!<br>
+		<small class="text-muted">Image by <a href="https://pixabay.com/users/bboellinger-4262159/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4446419">Birgit Böllinger</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4446419">Pixabay</a>
+		</small>
+		</p>
+	  </div>
+	</div>
+  </body>
+</html>
+  
